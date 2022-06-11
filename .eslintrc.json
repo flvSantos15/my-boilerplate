@@ -2,6 +2,7 @@
     "root": true,
     "env": {
         "browser": true,
+        "node": true,
         "es2021": true
     },
     "settings": {
@@ -14,6 +15,7 @@
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:prettier/recommended"
+
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -25,7 +27,8 @@
     },
     "plugins": [
         "react",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "react-hooks"
     ],
     "rules": {
         "react-hooks/rules-of-hooks": "error",
@@ -33,27 +36,11 @@
         "react/prop-types": "off",
         "react/react-in-jsx-scope": "off",
         "@typescript-eslint/explicit-module-boundary-types": "off",
-        "indent": [
-            "error",
-            "tab"
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ],
         "prettier/prettier": [
             "error",
             {
               "endOfLine": "auto"
             }
-          ],
-        "semi": [
-            "error",
-            "never"
         ]
     }
 }
